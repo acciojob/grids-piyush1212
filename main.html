@@ -16,7 +16,7 @@
       border: 5px solid rgb(255, 188, 188);
       height: 200px;
     }
-    .col {
+    #col {
       border: 2px dotted rgb(38, 38, 43);
     }
     .teal-bg {
@@ -42,17 +42,17 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-sm-6 teal-bg"></div>
-      <div class="col-md-8 col-sm-6 thistle-bg"></div>
+      <div id="col" class="r1c1 col-md-4 col-sm-6 teal-bg">Row1 col1</div>
+      <div id="col" class="r1c2 col-md-8 col-sm-6 thistle-bg">Row1 col2</div>
     </div>
-    <div class="row">
-      <div class="col-md-4 offset-md-2 col-sm-4 tomato-bg"></div>
-      <div class="col-md-4 col-sm-4 turquoise-bg"></div>
+    <div class="row justify-content-between">
+      <div id="col" class="r2c1 col-md-4 offset-md-2 col-sm-4 tomato-bg">Row2 col1</div>
+      <div id="col" class="r2c2 col-md-4 col-sm-4 turquoise-bg">Row2 col2</div>
       <div class="col-md-2 d-md-none"></div>
     </div>
-    <div class="row">
-      <div class="col-md-4 offset-md-2 col-sm-6 text-center violet-bg"></div>
-      <div class="col-md-4 col-sm-6 text-center yellowgreen-bg"></div>
+    <div class="row align-item-center ">
+      <div id="col" class="r3c1 col-md-4 offset-md-2 col-sm-6 violet-bg">Row3 col1</div>
+      <div id="col" class="r3c2 col-md-4 col-sm-6 yellowgreen-bg">Row3 col2</div>
     </div>
   </div>
 </body>
